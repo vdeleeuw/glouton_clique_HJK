@@ -1,0 +1,27 @@
+DE LEEUW Valérian & COUASNET Robin
+Projet théorie des graphes
+
+
+Principe :
+Les classes, l'héritage, les méthodes et les variables sont décrites dans la documentation de chaque classe. Cette 
+documentation est générée avec doxygen (pour la générer : voir les commandes plus bas). Pour la consulter il faut 
+allez dans projet-graphe/doc/html/ et ouvrir index.html avec votre navigateur internet.
+
+
+Utilisation :
+Lancer le programme (cf commandes ci-dessous) avec le fichier du graphe en paramètres. Le programme 
+demandera ensuite si vous voulez afficher la matrice du graphe à l'écran. Ensuite il demandera si vous voulez 
+afficher la matrice dans un fichier externe. Pour cela il faut donner un nom de fichier 
+(si le fichier existe, son contenu sera écrasé, si il n'existe pas il sera créé).
+Finalement le programme demandera le nombre de fois que vous voulez rechercher une clique dans le graphe et si vous
+voulez qu'il vous les affiche.
+Des fichiers de tests sont disponibles dans le dossier "test".
+
+
+
+Commandes (se placer dans /projet-graphe) :
+Compiler : 			make
+Consulter l'aide :		make help
+Générer la documentation : 	make doc
+Executer : 			./bin/projet-graphe fichier-graphe.txt resultat-graphe.txt
+Nettoyer le projet :		make mrproper

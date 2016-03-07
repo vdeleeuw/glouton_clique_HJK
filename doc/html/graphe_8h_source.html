@@ -1,0 +1,138 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.6"/>
+<title>projet-ia:  Fichier source de src/graphe.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">projet-ia
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.8.6 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Page&#160;principale</span></a></li>
+      <li><a href="annotated.html"><span>Classes</span></a></li>
+      <li class="current"><a href="files.html"><span>Fichiers</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Recherche" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Liste&#160;des&#160;fichiers</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Tout</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Fichiers</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Fonctions</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">graphe.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="graphe_8h.html">Aller à la documentation de ce fichier.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef GRAPHE_H</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define GRAPHE_H</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;vector&gt;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;</div>
+<div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="classgraphe.html">   22</a></span>&#160;<span class="keyword">class </span><a class="code" href="classgraphe.html">graphe</a>{</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;        <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;                std::vector&lt;std::vector&lt;bool&gt; &gt; m_matrice;      </div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;                <span class="keywordtype">int</span> m_nbArete;                                  </div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;                <span class="keywordtype">int</span> m_nbSommet;                                 </div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;        <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;                <a class="code" href="classgraphe.html#ae6d92ab361768080763736fc8c8438be">graphe</a>();</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;                <span class="keywordtype">bool</span> <a class="code" href="classgraphe.html#ac91fe8cf18cc77844cc6faf0b1dbd18b">init</a>(<span class="keywordtype">char</span>* );      </div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;                std::vector&lt;int&gt; <a class="code" href="classgraphe.html#ab1c1f8ecfe46e4add52e3cef7d3c958d">rechercheClique</a>();</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;                std::vector&lt;int&gt; <a class="code" href="classgraphe.html#a1aaae2944a27ab98a1cf49b3b65040e9">triClique</a>(std::vector&lt;int&gt;&amp; );</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;                <span class="keywordtype">bool</span> <a class="code" href="classgraphe.html#aa36c03e06eee1acf8cf4b9645efc761f">testClique</a>(std::vector&lt;int&gt; );</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;                <span class="keywordtype">void</span> <a class="code" href="classgraphe.html#a4946eb7fcf22eaf7ec454c08f667fb0d">afficherClique</a>(std::vector&lt;int&gt; );</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;                <span class="keywordtype">void</span> <a class="code" href="classgraphe.html#a66cf25511eda926679caec3fc81f5e73">afficherStats</a>();</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;                <span class="keywordtype">void</span> <a class="code" href="classgraphe.html#a72db045eb880c11a72e166180d778b22">afficherMatrice</a>();</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;                <span class="keywordtype">void</span> <a class="code" href="classgraphe.html#aa7ce96d55300c72288216d46911be7d1">afficherFichier</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* );</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;};</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="ttc" id="classgraphe_html_aa7ce96d55300c72288216d46911be7d1"><div class="ttname"><a href="classgraphe.html#aa7ce96d55300c72288216d46911be7d1">graphe::afficherFichier</a></div><div class="ttdeci">void afficherFichier(const char *)</div><div class="ttdef"><b>Definition:</b> graphe.cpp:242</div></div>
+<div class="ttc" id="classgraphe_html_a4946eb7fcf22eaf7ec454c08f667fb0d"><div class="ttname"><a href="classgraphe.html#a4946eb7fcf22eaf7ec454c08f667fb0d">graphe::afficherClique</a></div><div class="ttdeci">void afficherClique(std::vector&lt; int &gt;)</div><div class="ttdef"><b>Definition:</b> graphe.cpp:214</div></div>
+<div class="ttc" id="classgraphe_html_ac91fe8cf18cc77844cc6faf0b1dbd18b"><div class="ttname"><a href="classgraphe.html#ac91fe8cf18cc77844cc6faf0b1dbd18b">graphe::init</a></div><div class="ttdeci">bool init(char *)</div><div class="ttdef"><b>Definition:</b> graphe.cpp:24</div></div>
+<div class="ttc" id="classgraphe_html_a1aaae2944a27ab98a1cf49b3b65040e9"><div class="ttname"><a href="classgraphe.html#a1aaae2944a27ab98a1cf49b3b65040e9">graphe::triClique</a></div><div class="ttdeci">std::vector&lt; int &gt; triClique(std::vector&lt; int &gt; &amp;)</div><div class="ttdef"><b>Definition:</b> graphe.cpp:187</div></div>
+<div class="ttc" id="classgraphe_html_aa36c03e06eee1acf8cf4b9645efc761f"><div class="ttname"><a href="classgraphe.html#aa36c03e06eee1acf8cf4b9645efc761f">graphe::testClique</a></div><div class="ttdeci">bool testClique(std::vector&lt; int &gt;)</div><div class="ttdef"><b>Definition:</b> graphe.cpp:201</div></div>
+<div class="ttc" id="classgraphe_html_ae6d92ab361768080763736fc8c8438be"><div class="ttname"><a href="classgraphe.html#ae6d92ab361768080763736fc8c8438be">graphe::graphe</a></div><div class="ttdeci">graphe()</div><div class="ttdoc">Constructeur. </div><div class="ttdef"><b>Definition:</b> graphe.cpp:19</div></div>
+<div class="ttc" id="classgraphe_html_ab1c1f8ecfe46e4add52e3cef7d3c958d"><div class="ttname"><a href="classgraphe.html#ab1c1f8ecfe46e4add52e3cef7d3c958d">graphe::rechercheClique</a></div><div class="ttdeci">std::vector&lt; int &gt; rechercheClique()</div><div class="ttdef"><b>Definition:</b> graphe.cpp:117</div></div>
+<div class="ttc" id="classgraphe_html"><div class="ttname"><a href="classgraphe.html">graphe</a></div><div class="ttdef"><b>Definition:</b> graphe.h:22</div></div>
+<div class="ttc" id="classgraphe_html_a66cf25511eda926679caec3fc81f5e73"><div class="ttname"><a href="classgraphe.html#a66cf25511eda926679caec3fc81f5e73">graphe::afficherStats</a></div><div class="ttdeci">void afficherStats()</div><div class="ttdef"><b>Definition:</b> graphe.cpp:221</div></div>
+<div class="ttc" id="classgraphe_html_a72db045eb880c11a72e166180d778b22"><div class="ttname"><a href="classgraphe.html#a72db045eb880c11a72e166180d778b22">graphe::afficherMatrice</a></div><div class="ttdeci">void afficherMatrice()</div><div class="ttdef"><b>Definition:</b> graphe.cpp:228</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré le Lundi 7 Mars 2016 14:47:57 pour projet-ia par &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.6
+</small></address>
+</body>
+</html>

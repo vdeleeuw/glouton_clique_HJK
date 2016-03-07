@@ -1,0 +1,137 @@
+\hypertarget{classgraphe}{\section{Référence de la classe graphe}
+\label{classgraphe}\index{graphe@{graphe}}
+}
+
+
+{\ttfamily \#include $<$graphe.\-h$>$}
+
+\subsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classgraphe_ae6d92ab361768080763736fc8c8438be}{graphe} ()
+\begin{DoxyCompactList}\small\item\em Constructeur. \end{DoxyCompactList}\item 
+bool \hyperlink{classgraphe_ac91fe8cf18cc77844cc6faf0b1dbd18b}{init} (char $\ast$)
+\item 
+std\-::vector$<$ int $>$ \hyperlink{classgraphe_ab1c1f8ecfe46e4add52e3cef7d3c958d}{recherche\-Clique} ()
+\item 
+std\-::vector$<$ int $>$ \hyperlink{classgraphe_a1aaae2944a27ab98a1cf49b3b65040e9}{tri\-Clique} (std\-::vector$<$ int $>$ \&)
+\item 
+bool \hyperlink{classgraphe_aa36c03e06eee1acf8cf4b9645efc761f}{test\-Clique} (std\-::vector$<$ int $>$)
+\item 
+void \hyperlink{classgraphe_a4946eb7fcf22eaf7ec454c08f667fb0d}{afficher\-Clique} (std\-::vector$<$ int $>$)
+\item 
+void \hyperlink{classgraphe_a66cf25511eda926679caec3fc81f5e73}{afficher\-Stats} ()
+\item 
+void \hyperlink{classgraphe_a72db045eb880c11a72e166180d778b22}{afficher\-Matrice} ()
+\item 
+void \hyperlink{classgraphe_aa7ce96d55300c72288216d46911be7d1}{afficher\-Fichier} (const char $\ast$)
+\end{DoxyCompactItemize}
+
+
+\subsection{Description détaillée}
+Le fichier \hyperlink{graphe_8h}{graphe.\-h} stocke les informations d'un graphe dans des variables qui sont \-: m\-\_\-matrice qui est une matrice représentant le graphe (vecteur de vecteur de booléen), un entier représentant le nombre d'arêtes d'un graphe, et un entier représentant le nombre de sommet d'un graphe. Elle dispose d'un constructeur par défaut, d'une méthode d'initialisation de la matrice et des variables de classes par rapport un à un fichier de graphe, d'une méthode de recherche de clique à l'intérieur de la matrice, d'une méthode qui permet de trier une clique, d'une méthode qui teste si une clique est valide et de différentes méthodes d'affichages dont une méthode qui permet d'écrire la matrice dans un fichier. 
+
+\subsection{Documentation des constructeurs et destructeur}
+\hypertarget{classgraphe_ae6d92ab361768080763736fc8c8438be}{\index{graphe@{graphe}!graphe@{graphe}}
+\index{graphe@{graphe}!graphe@{graphe}}
+\subsubsection[{graphe}]{\setlength{\rightskip}{0pt plus 5cm}void graphe\-::graphe (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classgraphe_ae6d92ab361768080763736fc8c8438be}
+
+
+Constructeur. 
+
+Constructeur par défaut de la classe graphe. 
+
+\subsection{Documentation des fonctions membres}
+\hypertarget{classgraphe_a4946eb7fcf22eaf7ec454c08f667fb0d}{\index{graphe@{graphe}!afficher\-Clique@{afficher\-Clique}}
+\index{afficher\-Clique@{afficher\-Clique}!graphe@{graphe}}
+\subsubsection[{afficher\-Clique}]{\setlength{\rightskip}{0pt plus 5cm}void graphe\-::afficher\-Clique (
+\begin{DoxyParamCaption}
+\item[{std\-::vector$<$ int $>$}]{clique}
+\end{DoxyParamCaption}
+)}}\label{classgraphe_a4946eb7fcf22eaf7ec454c08f667fb0d}
+C'est une méthode qui affiche la clique passée en paramètre dans le terminal. \hypertarget{classgraphe_aa7ce96d55300c72288216d46911be7d1}{\index{graphe@{graphe}!afficher\-Fichier@{afficher\-Fichier}}
+\index{afficher\-Fichier@{afficher\-Fichier}!graphe@{graphe}}
+\subsubsection[{afficher\-Fichier}]{\setlength{\rightskip}{0pt plus 5cm}void graphe\-::afficher\-Fichier (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{nom\-Fic}
+\end{DoxyParamCaption}
+)}}\label{classgraphe_aa7ce96d55300c72288216d46911be7d1}
+
+\begin{DoxyParams}{Paramètres}
+{\em nom\-Fic} & \-: nom de fichier de destination dans lequel sera écrit la matrice d'un graphe.\\
+\hline
+\end{DoxyParams}
+C'est une méthode qui affiche la matrice d'un graphe et ses statistiques dans un fichier externe. \hypertarget{classgraphe_a72db045eb880c11a72e166180d778b22}{\index{graphe@{graphe}!afficher\-Matrice@{afficher\-Matrice}}
+\index{afficher\-Matrice@{afficher\-Matrice}!graphe@{graphe}}
+\subsubsection[{afficher\-Matrice}]{\setlength{\rightskip}{0pt plus 5cm}void graphe\-::afficher\-Matrice (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classgraphe_a72db045eb880c11a72e166180d778b22}
+C'est une méthode qui affiche la matrice d'un graphe dans le terminal. \hypertarget{classgraphe_a66cf25511eda926679caec3fc81f5e73}{\index{graphe@{graphe}!afficher\-Stats@{afficher\-Stats}}
+\index{afficher\-Stats@{afficher\-Stats}!graphe@{graphe}}
+\subsubsection[{afficher\-Stats}]{\setlength{\rightskip}{0pt plus 5cm}void graphe\-::afficher\-Stats (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classgraphe_a66cf25511eda926679caec3fc81f5e73}
+C'est une méthode qui affiche les informations concernant un graphe, c'est à dire son nombre d'arêtes et son nombre de sommets dans le terminal. \hypertarget{classgraphe_ac91fe8cf18cc77844cc6faf0b1dbd18b}{\index{graphe@{graphe}!init@{init}}
+\index{init@{init}!graphe@{graphe}}
+\subsubsection[{init}]{\setlength{\rightskip}{0pt plus 5cm}bool graphe\-::init (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{nom\-Fic}
+\end{DoxyParamCaption}
+)}}\label{classgraphe_ac91fe8cf18cc77844cc6faf0b1dbd18b}
+
+\begin{DoxyParams}{Paramètres}
+{\em nom\-Fic} & \-: nom du fichier contenant le graphe avec lequel sera initialisé la matrice et les variables de la classe graphe. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+Un booléen qui vaut true si l'initialisation s'est déroulée correctement, faux sinon.
+\end{DoxyReturn}
+C'est une méthode qui prend un nom de fichier en paramètre et qui initialise un objet de la classe graphe avec ce fichier. \hypertarget{classgraphe_ab1c1f8ecfe46e4add52e3cef7d3c958d}{\index{graphe@{graphe}!recherche\-Clique@{recherche\-Clique}}
+\index{recherche\-Clique@{recherche\-Clique}!graphe@{graphe}}
+\subsubsection[{recherche\-Clique}]{\setlength{\rightskip}{0pt plus 5cm}vector$<$ int $>$ graphe\-::recherche\-Clique (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classgraphe_ab1c1f8ecfe46e4add52e3cef7d3c958d}
+\begin{DoxyReturn}{Renvoie}
+Un vecteur d'entier contenant une clique trouvé par la méthode.
+\end{DoxyReturn}
+C'est une méthode qui recherche une clique dans la matrice de la classe. Cette méthode contient un algorithme glouton qui teste chaque sommet adjacent et qui choisit le sommet possèdant le plus d'arêtes en priorité. \hypertarget{classgraphe_aa36c03e06eee1acf8cf4b9645efc761f}{\index{graphe@{graphe}!test\-Clique@{test\-Clique}}
+\index{test\-Clique@{test\-Clique}!graphe@{graphe}}
+\subsubsection[{test\-Clique}]{\setlength{\rightskip}{0pt plus 5cm}bool graphe\-::test\-Clique (
+\begin{DoxyParamCaption}
+\item[{std\-::vector$<$ int $>$}]{clique}
+\end{DoxyParamCaption}
+)}}\label{classgraphe_aa36c03e06eee1acf8cf4b9645efc761f}
+
+\begin{DoxyParams}{Paramètres}
+{\em clique} & \-: vecteur d'entier qui sera testée pour savoir s'il s'agit bien d'une clique ou non. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+Un booléen qui vaut true si la clique passée en paramètre est valide, faux sinon.
+\end{DoxyReturn}
+C'est une méthode qui teste une clique passée en paramètre pour savoir si elle est valide, la méthode retournera true si c'est le cas, faux sinon. La clique est comparée à la matrice pour voir si chaque sommet possède une arête en commun avec chaque élément de la clique. \hypertarget{classgraphe_a1aaae2944a27ab98a1cf49b3b65040e9}{\index{graphe@{graphe}!tri\-Clique@{tri\-Clique}}
+\index{tri\-Clique@{tri\-Clique}!graphe@{graphe}}
+\subsubsection[{tri\-Clique}]{\setlength{\rightskip}{0pt plus 5cm}vector$<$ int $>$ graphe\-::tri\-Clique (
+\begin{DoxyParamCaption}
+\item[{std\-::vector$<$ int $>$ \&}]{clique}
+\end{DoxyParamCaption}
+)}}\label{classgraphe_a1aaae2944a27ab98a1cf49b3b65040e9}
+\begin{DoxyReturn}{Renvoie}
+Un vecteur d'entier contenant la clique triée passée en paramètre.
+\end{DoxyReturn}
+C'est une méthode qui d'après une clique passée en paramètre retourne cette même clique triée par ordre croissant. 
+
+La documentation de cette classe a été générée à partir des fichiers suivants \-:\begin{DoxyCompactItemize}
+\item 
+src/\hyperlink{graphe_8h}{graphe.\-h}\item 
+src/\hyperlink{graphe_8cpp}{graphe.\-cpp}\end{DoxyCompactItemize}
