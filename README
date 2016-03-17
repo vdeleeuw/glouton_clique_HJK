@@ -5,7 +5,7 @@ Projet théorie des graphes
 Principe :
 Les classes, l'héritage, les méthodes et les variables sont décrites dans la documentation de chaque classe. Cette 
 documentation est générée avec doxygen (pour la générer : voir les commandes plus bas). Pour la consulter il faut 
-allez dans projet-graphe/doc/html/ et ouvrir index.html avec votre navigateur internet.
+aller dans projet-graphe/doc/html/ et ouvrir index.html avec votre navigateur internet.
 
 
 Utilisation :
